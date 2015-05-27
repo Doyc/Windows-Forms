@@ -88,6 +88,12 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm.cpp" />
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm1.cpp" />
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm2.cpp" />
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm3.cpp" />
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm4.cpp" />
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm5.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -96,6 +102,24 @@
     <ClCompile Include="WindowsFormApplication1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm3.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm4.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm5.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -106,6 +130,24 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm.resx">
+      <DependentUpon>..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm1.resx">
+      <DependentUpon>..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm2.resx">
+      <DependentUpon>..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm3.resx">
+      <DependentUpon>..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm3.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm4.resx">
+      <DependentUpon>..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm4.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm5.resx">
+      <DependentUpon>..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm5.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resX">
       <DependentUpon>Form1.h</DependentUpon>
       <SubType>Designer</SubType>

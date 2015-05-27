@@ -30,6 +30,24 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm1.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm2.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm3.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm4.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm5.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -39,6 +57,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Patrik Rene%27\Documents\GitHub\Windows-Forms\WindowsFormApplication1\MyForm5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
