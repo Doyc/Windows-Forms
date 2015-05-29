@@ -1,4 +1,5 @@
 #pragma once
+#include "Form1.h"
 
 namespace WindowsFormApplication1 {
 
@@ -44,16 +45,16 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::RadioButton^  radioButton3;
 	private: System::Windows::Forms::RadioButton^  radioButton4;
 	private: System::Windows::Forms::RadioButton^  radioButton5;
-	private: System::Windows::Forms::RadioButton^  radioButton6;
-	private: System::Windows::Forms::RadioButton^  radioButton7;
-	private: System::Windows::Forms::RadioButton^  radioButton8;
+
+
+
 	private: System::Windows::Forms::GroupBox^  groupBox1;
 	private: System::Windows::Forms::GroupBox^  groupBox2;
-	private: System::Windows::Forms::RadioButton^  radioButton9;
+
 	private: System::Windows::Forms::RadioButton^  radioButton10;
-	private: System::Windows::Forms::RadioButton^  radioButton11;
+
 	private: System::Windows::Forms::RadioButton^  radioButton12;
-	private: System::Windows::Forms::RadioButton^  radioButton13;
+
 	private: System::Windows::Forms::RadioButton^  radioButton14;
 	private: System::Windows::Forms::RadioButton^  radioButton15;
 	private: System::Windows::Forms::RadioButton^  radioButton16;
@@ -65,25 +66,6 @@ namespace WindowsFormApplication1 {
 	protected:
 
 	protected:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -107,16 +89,10 @@ namespace WindowsFormApplication1 {
 			this->radioButton3 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton4 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton5 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton6 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton7 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton8 = (gcnew System::Windows::Forms::RadioButton());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->radioButton9 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton10 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton11 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton12 = (gcnew System::Windows::Forms::RadioButton());
-			this->radioButton13 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton14 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton15 = (gcnew System::Windows::Forms::RadioButton());
 			this->radioButton16 = (gcnew System::Windows::Forms::RadioButton());
@@ -148,7 +124,6 @@ namespace WindowsFormApplication1 {
 			this->radioButton2->TabStop = true;
 			this->radioButton2->Text = L"seconds";
 			this->radioButton2->UseVisualStyleBackColor = true;
-			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton2_CheckedChanged);
 			// 
 			// radioButton3
 			// 
@@ -160,7 +135,6 @@ namespace WindowsFormApplication1 {
 			this->radioButton3->TabStop = true;
 			this->radioButton3->Text = L"minutes";
 			this->radioButton3->UseVisualStyleBackColor = true;
-			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton3_CheckedChanged);
 			// 
 			// radioButton4
 			// 
@@ -183,89 +157,34 @@ namespace WindowsFormApplication1 {
 			this->radioButton5->TabStop = true;
 			this->radioButton5->Text = L"days";
 			this->radioButton5->UseVisualStyleBackColor = true;
-			this->radioButton5->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton5_CheckedChanged);
-			// 
-			// radioButton6
-			// 
-			this->radioButton6->AutoSize = true;
-			this->radioButton6->Location = System::Drawing::Point(6, 134);
-			this->radioButton6->Name = L"radioButton6";
-			this->radioButton6->Size = System::Drawing::Size(56, 17);
-			this->radioButton6->TabIndex = 5;
-			this->radioButton6->TabStop = true;
-			this->radioButton6->Text = L"weeks";
-			this->radioButton6->UseVisualStyleBackColor = true;
-			this->radioButton6->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton6_CheckedChanged);
-			// 
-			// radioButton7
-			// 
-			this->radioButton7->AutoSize = true;
-			this->radioButton7->Location = System::Drawing::Point(6, 158);
-			this->radioButton7->Name = L"radioButton7";
-			this->radioButton7->Size = System::Drawing::Size(59, 17);
-			this->radioButton7->TabIndex = 6;
-			this->radioButton7->TabStop = true;
-			this->radioButton7->Text = L"months";
-			this->radioButton7->UseVisualStyleBackColor = true;
-			this->radioButton7->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton7_CheckedChanged);
-			// 
-			// radioButton8
-			// 
-			this->radioButton8->AutoSize = true;
-			this->radioButton8->Location = System::Drawing::Point(6, 182);
-			this->radioButton8->Name = L"radioButton8";
-			this->radioButton8->Size = System::Drawing::Size(50, 17);
-			this->radioButton8->TabIndex = 7;
-			this->radioButton8->TabStop = true;
-			this->radioButton8->Text = L"years";
-			this->radioButton8->UseVisualStyleBackColor = true;
-			this->radioButton8->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton8_CheckedChanged);
 			// 
 			// groupBox1
 			// 
-			this->groupBox1->Controls->Add(this->radioButton8);
 			this->groupBox1->Controls->Add(this->radioButton1);
-			this->groupBox1->Controls->Add(this->radioButton7);
 			this->groupBox1->Controls->Add(this->radioButton2);
-			this->groupBox1->Controls->Add(this->radioButton6);
 			this->groupBox1->Controls->Add(this->radioButton3);
 			this->groupBox1->Controls->Add(this->radioButton5);
 			this->groupBox1->Controls->Add(this->radioButton4);
 			this->groupBox1->Location = System::Drawing::Point(182, 20);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(111, 209);
+			this->groupBox1->Size = System::Drawing::Size(111, 140);
 			this->groupBox1->TabIndex = 8;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"CONVERT THIS";
 			// 
 			// groupBox2
 			// 
-			this->groupBox2->Controls->Add(this->radioButton9);
 			this->groupBox2->Controls->Add(this->radioButton10);
-			this->groupBox2->Controls->Add(this->radioButton11);
 			this->groupBox2->Controls->Add(this->radioButton12);
-			this->groupBox2->Controls->Add(this->radioButton13);
 			this->groupBox2->Controls->Add(this->radioButton14);
 			this->groupBox2->Controls->Add(this->radioButton15);
 			this->groupBox2->Controls->Add(this->radioButton16);
 			this->groupBox2->Location = System::Drawing::Point(336, 20);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(95, 209);
+			this->groupBox2->Size = System::Drawing::Size(95, 140);
 			this->groupBox2->TabIndex = 9;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"INTO THIS";
-			// 
-			// radioButton9
-			// 
-			this->radioButton9->AutoSize = true;
-			this->radioButton9->Location = System::Drawing::Point(6, 182);
-			this->radioButton9->Name = L"radioButton9";
-			this->radioButton9->Size = System::Drawing::Size(50, 17);
-			this->radioButton9->TabIndex = 7;
-			this->radioButton9->TabStop = true;
-			this->radioButton9->Text = L"years";
-			this->radioButton9->UseVisualStyleBackColor = true;
-			this->radioButton9->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton9_CheckedChanged);
 			// 
 			// radioButton10
 			// 
@@ -278,18 +197,6 @@ namespace WindowsFormApplication1 {
 			this->radioButton10->Text = L"miliseconds";
 			this->radioButton10->UseVisualStyleBackColor = true;
 			// 
-			// radioButton11
-			// 
-			this->radioButton11->AutoSize = true;
-			this->radioButton11->Location = System::Drawing::Point(6, 158);
-			this->radioButton11->Name = L"radioButton11";
-			this->radioButton11->Size = System::Drawing::Size(59, 17);
-			this->radioButton11->TabIndex = 6;
-			this->radioButton11->TabStop = true;
-			this->radioButton11->Text = L"months";
-			this->radioButton11->UseVisualStyleBackColor = true;
-			this->radioButton11->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton11_CheckedChanged);
-			// 
 			// radioButton12
 			// 
 			this->radioButton12->AutoSize = true;
@@ -300,18 +207,6 @@ namespace WindowsFormApplication1 {
 			this->radioButton12->TabStop = true;
 			this->radioButton12->Text = L"seconds";
 			this->radioButton12->UseVisualStyleBackColor = true;
-			// 
-			// radioButton13
-			// 
-			this->radioButton13->AutoSize = true;
-			this->radioButton13->Location = System::Drawing::Point(6, 134);
-			this->radioButton13->Name = L"radioButton13";
-			this->radioButton13->Size = System::Drawing::Size(56, 17);
-			this->radioButton13->TabIndex = 5;
-			this->radioButton13->TabStop = true;
-			this->radioButton13->Text = L"weeks";
-			this->radioButton13->UseVisualStyleBackColor = true;
-			this->radioButton13->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton13_CheckedChanged);
 			// 
 			// radioButton14
 			// 
@@ -334,7 +229,6 @@ namespace WindowsFormApplication1 {
 			this->radioButton15->TabStop = true;
 			this->radioButton15->Text = L"days";
 			this->radioButton15->UseVisualStyleBackColor = true;
-			this->radioButton15->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton15_CheckedChanged);
 			// 
 			// radioButton16
 			// 
@@ -346,18 +240,18 @@ namespace WindowsFormApplication1 {
 			this->radioButton16->TabStop = true;
 			this->radioButton16->Text = L"hours";
 			this->radioButton16->UseVisualStyleBackColor = true;
-			this->radioButton16->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton16_CheckedChanged);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(35, 106);
+			this->textBox1->Location = System::Drawing::Point(33, 81);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(100, 20);
 			this->textBox1->TabIndex = 10;
+			this->textBox1->Text = L"0000";
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(463, 103);
+			this->button1->Location = System::Drawing::Point(466, 78);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 23);
 			this->button1->TabIndex = 11;
@@ -368,7 +262,7 @@ namespace WindowsFormApplication1 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(570, 106);
+			this->label1->Location = System::Drawing::Point(568, 88);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(34, 13);
 			this->label1->TabIndex = 12;
@@ -378,7 +272,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(630, 241);
+			this->ClientSize = System::Drawing::Size(630, 173);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
@@ -403,72 +297,69 @@ namespace WindowsFormApplication1 {
 	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
 
-//RADIO BUTTON SELECTION; 1 = milisec, 2 = sec, 3 = min, 4 = hours, 5 = days, 6 = weeks, 7 = months, 8 = years 
-	
-	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 1;
-	}
-	private: System::Void radioButton10_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 1;
-	}
-	private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 2;
-	}
-	private: System::Void radioButton12_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 2;
-	}
-	private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 3;
-	}
-	private: System::Void radioButton14_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 3;
-	}
-	private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 4;
-	}
-	private: System::Void radioButton16_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 4;
-	}
-	private: System::Void radioButton5_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 5;
-	}
-	private: System::Void radioButton15_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 5;
-	}
-	private: System::Void radioButton6_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 6;
-	}
-	private: System::Void radioButton13_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 6;
-	}
-	private: System::Void radioButton7_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 7;
-	}
-	private: System::Void radioButton11_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 7;
-	}
-	private: System::Void radioButton8_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv1 = 8;
-	}
-	private: System::Void radioButton9_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
-		conv2 = 8;
-	}
 
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 		double solution;
 		double insert;
 		insert = System::Convert::ToDouble(textBox1->Text);
 
-		
-		if ((conv1 == 1) && (conv2 == 1))
+		//MILISEKUNDY
+		if ((radioButton1->Checked) && (radioButton10->Checked))
 			solution = insert;
-		else if ((conv1 == 1) && (conv2 == 2))
+		else if ((radioButton1->Checked) && (radioButton12->Checked))
 			solution = insert / 100;
-		else if ((conv1 == 1) && (conv2 == 3))
+		else if ((radioButton1->Checked) && (radioButton14->Checked))
 			solution = insert / 6000;
+		else if ((radioButton1->Checked) && (radioButton16->Checked))
+			solution = insert / 360000;
+		else if ((radioButton1->Checked) && (radioButton15->Checked))
+			solution = insert /864000;
+		//TERAZ SEKUNDY
+		else if ((radioButton2->Checked) && (radioButton10->Checked))
+			solution = insert * 100;
+		else if ((radioButton2->Checked) && (radioButton12->Checked))
+			solution = insert;
+		else if ((radioButton2->Checked) && (radioButton14->Checked))
+			solution = insert / 60;
+		else if ((radioButton2->Checked) && (radioButton16->Checked))
+			solution = insert / 1440;
+		else if ((radioButton2->Checked) && (radioButton15->Checked))
+			solution = insert / 10080;
+		//TERAZ MINUTY
+		else if ((radioButton3->Checked) && (radioButton10->Checked))
+			solution = insert * 6000;
+		else if ((radioButton3->Checked) && (radioButton12->Checked))
+			solution = insert * 60;
+		else if ((radioButton3->Checked) && (radioButton14->Checked))
+			solution = insert;
+		else if ((radioButton3->Checked) && (radioButton16->Checked))
+			solution = insert / 60;
+		else if ((radioButton3->Checked) && (radioButton15->Checked))
+			solution = insert / 1440;
+		//TERAZ GODZINY
+		else if ((radioButton4->Checked) && (radioButton10->Checked))
+			solution = insert * 36000;
+		else if ((radioButton4->Checked) && (radioButton12->Checked))
+			solution = insert * 3600;
+		else if ((radioButton4->Checked) && (radioButton14->Checked))
+			solution = insert * 60;
+		else if ((radioButton4->Checked) && (radioButton16->Checked))
+			solution = insert;
+		else if ((radioButton4->Checked) && (radioButton15->Checked))
+			solution = insert / 24;
+		//TERAZ DNI
+		else if ((radioButton5->Checked) && (radioButton10->Checked))
+			solution = insert * 864000;
+		else if ((radioButton5->Checked) && (radioButton12->Checked))
+			solution = insert * 86400;
+		else if ((radioButton5->Checked) && (radioButton14->Checked))
+			solution = insert * 1440;
+		else if ((radioButton5->Checked) && (radioButton16->Checked))
+			solution = insert * 24;
+		else if ((radioButton5->Checked) && (radioButton15->Checked))
+			solution = insert;
 		else
-			solution =123123;
-
+			solution = 0000;
 
 		label1->Text = System::Convert::ToString(solution);
 	}

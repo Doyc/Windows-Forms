@@ -140,6 +140,7 @@ namespace WindowsFormApplication1 {
 			this->label1->Size = System::Drawing::Size(127, 17);
 			this->label1->TabIndex = 12;
 			this->label1->Text = L"CONVERTED IT IS:";
+			this->label1->Click += gcnew System::EventHandler(this, &Form1::label1_Click);
 			// 
 			// Form1
 			// 
@@ -195,6 +196,8 @@ namespace WindowsFormApplication1 {
 
 	}
 
+private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }
 
