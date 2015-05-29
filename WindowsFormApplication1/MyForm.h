@@ -27,6 +27,11 @@ namespace WindowsFormApplication1 {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
+
+		int conv1;//zamieniane
+		int conv2;//na zamiane
+
+
 		~MyForm()
 		{
 			if (components)
@@ -54,6 +59,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::RadioButton^  radioButton16;
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Label^  label1;
 	protected:
 
 	protected:
@@ -116,6 +122,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton16 = (gcnew System::Windows::Forms::RadioButton());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
@@ -141,6 +148,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton2->TabStop = true;
 			this->radioButton2->Text = L"seconds";
 			this->radioButton2->UseVisualStyleBackColor = true;
+			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton2_CheckedChanged);
 			// 
 			// radioButton3
 			// 
@@ -152,6 +160,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton3->TabStop = true;
 			this->radioButton3->Text = L"minutes";
 			this->radioButton3->UseVisualStyleBackColor = true;
+			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton3_CheckedChanged);
 			// 
 			// radioButton4
 			// 
@@ -174,6 +183,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton5->TabStop = true;
 			this->radioButton5->Text = L"days";
 			this->radioButton5->UseVisualStyleBackColor = true;
+			this->radioButton5->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton5_CheckedChanged);
 			// 
 			// radioButton6
 			// 
@@ -185,6 +195,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton6->TabStop = true;
 			this->radioButton6->Text = L"weeks";
 			this->radioButton6->UseVisualStyleBackColor = true;
+			this->radioButton6->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton6_CheckedChanged);
 			// 
 			// radioButton7
 			// 
@@ -196,6 +207,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton7->TabStop = true;
 			this->radioButton7->Text = L"months";
 			this->radioButton7->UseVisualStyleBackColor = true;
+			this->radioButton7->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton7_CheckedChanged);
 			// 
 			// radioButton8
 			// 
@@ -207,6 +219,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton8->TabStop = true;
 			this->radioButton8->Text = L"years";
 			this->radioButton8->UseVisualStyleBackColor = true;
+			this->radioButton8->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton8_CheckedChanged);
 			// 
 			// groupBox1
 			// 
@@ -252,6 +265,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton9->TabStop = true;
 			this->radioButton9->Text = L"years";
 			this->radioButton9->UseVisualStyleBackColor = true;
+			this->radioButton9->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton9_CheckedChanged);
 			// 
 			// radioButton10
 			// 
@@ -274,6 +288,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton11->TabStop = true;
 			this->radioButton11->Text = L"months";
 			this->radioButton11->UseVisualStyleBackColor = true;
+			this->radioButton11->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton11_CheckedChanged);
 			// 
 			// radioButton12
 			// 
@@ -296,6 +311,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton13->TabStop = true;
 			this->radioButton13->Text = L"weeks";
 			this->radioButton13->UseVisualStyleBackColor = true;
+			this->radioButton13->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton13_CheckedChanged);
 			// 
 			// radioButton14
 			// 
@@ -318,6 +334,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton15->TabStop = true;
 			this->radioButton15->Text = L"days";
 			this->radioButton15->UseVisualStyleBackColor = true;
+			this->radioButton15->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton15_CheckedChanged);
 			// 
 			// radioButton16
 			// 
@@ -329,6 +346,7 @@ namespace WindowsFormApplication1 {
 			this->radioButton16->TabStop = true;
 			this->radioButton16->Text = L"hours";
 			this->radioButton16->UseVisualStyleBackColor = true;
+			this->radioButton16->CheckedChanged += gcnew System::EventHandler(this, &MyForm::radioButton16_CheckedChanged);
 			// 
 			// textBox1
 			// 
@@ -347,11 +365,21 @@ namespace WindowsFormApplication1 {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(570, 106);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(34, 13);
+			this->label1->TabIndex = 12;
+			this->label1->Text = L"wynik";
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(552, 241);
+			this->ClientSize = System::Drawing::Size(630, 241);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->groupBox2);
@@ -371,10 +399,78 @@ namespace WindowsFormApplication1 {
 
 	
 	
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-
+	
+	private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
-private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
-}
+
+//RADIO BUTTON SELECTION; 1 = milisec, 2 = sec, 3 = min, 4 = hours, 5 = days, 6 = weeks, 7 = months, 8 = years 
+	
+	private: System::Void radioButton1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 1;
+	}
+	private: System::Void radioButton10_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 1;
+	}
+	private: System::Void radioButton2_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 2;
+	}
+	private: System::Void radioButton12_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 2;
+	}
+	private: System::Void radioButton3_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 3;
+	}
+	private: System::Void radioButton14_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 3;
+	}
+	private: System::Void radioButton4_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 4;
+	}
+	private: System::Void radioButton16_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 4;
+	}
+	private: System::Void radioButton5_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 5;
+	}
+	private: System::Void radioButton15_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 5;
+	}
+	private: System::Void radioButton6_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 6;
+	}
+	private: System::Void radioButton13_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 6;
+	}
+	private: System::Void radioButton7_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 7;
+	}
+	private: System::Void radioButton11_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 7;
+	}
+	private: System::Void radioButton8_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv1 = 8;
+	}
+	private: System::Void radioButton9_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		conv2 = 8;
+	}
+
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		double solution;
+		double insert;
+		insert = System::Convert::ToDouble(textBox1->Text);
+
+		
+		if ((conv1 == 1) && (conv2 == 1))
+			solution = insert;
+		else if ((conv1 == 1) && (conv2 == 2))
+			solution = insert / 100;
+		else if ((conv1 == 1) && (conv2 == 3))
+			solution = insert / 6000;
+		else
+			solution =123123;
+
+
+		label1->Text = System::Convert::ToString(solution);
+	}
 };
 }
