@@ -1,6 +1,4 @@
 #pragma once
-#include "Form1.h"
-
 namespace WindowsFormApplication1 {
 
 	using namespace System;
@@ -60,7 +58,7 @@ namespace WindowsFormApplication1 {
 	private: System::Windows::Forms::RadioButton^  radioButton16;
 	private: System::Windows::Forms::TextBox^  textBox1;
 	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::Label^  label1;
+	public: System::Windows::Forms::Label^  label1;
 	protected:
 
 	protected:
@@ -272,7 +270,7 @@ namespace WindowsFormApplication1 {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(630, 173);
+			this->ClientSize = System::Drawing::Size(690, 173);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
@@ -361,7 +359,10 @@ namespace WindowsFormApplication1 {
 		else
 			solution = 0000;
 
+	
 		label1->Text = System::Convert::ToString(solution);
+		
+
 	}
 };
 }
